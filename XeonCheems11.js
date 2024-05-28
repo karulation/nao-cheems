@@ -374,7 +374,7 @@ module.exports = XeonBotInc = async (XeonBotInc, m, chatUpdate, store) => {
             }
             
             //Fake quoted 
-        const fpay = { key: { remoteJid: '0@s.whatsapp.net', fromMe: false, id:global.botname, participant: '0@s.whatsapp.net'}, message: { requestPaymentMessage: { currencyCodeIso4217: "USD", amount1000: 999999999, requestFrom: '0@s.whatsapp.net', noteMessage: { extendedTextMessage: { text: global.botname}}, expiryTimestamp: 999999999, amount: { value: 91929291929, offset: 1000, currencyCode: "USD"}}}}
+        const fpay = { key: { remoteJid: '0@s.whatsapp.net', fromMe: false, id:global.botname, participant: '0@s.whatsapp.net'}, message: { requestPaymentMessage: { currencyCodeIso4217: "USD", amount1000: 999999999, requestFrom: '0@s.whatsapp.net', noteMessage: { extendedTextMessage: { text: global.botname}}, expiryTimestamp: 999999999, amount: { value: 60177637943, offset: 1000, currencyCode: "USD"}}}}
 	    const ftroli ={key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "status@broadcast"}, "message": {orderMessage: {itemCount: 2022,status: 200, thumbnail: thumb, surface: 200, message: botname, orderTitle: ownername, sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
 		const fdoc = {key : {participant : '0@s.whatsapp.net', ...(m.chat ? { remoteJid: `status@broadcast` } : {}) },message: {documentMessage: {title: botname,jpegThumbnail: thumb}}}
 		const fvn = {key: {participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "status@broadcast" } : {})},message: { "audioMessage": {"mimetype":"audio/ogg; codecs=opus","seconds":359996400,"ptt": "true"}} } 
@@ -403,7 +403,7 @@ module.exports = XeonBotInc = async (XeonBotInc, m, chatUpdate, store) => {
 			},
 			expiryTimestamp: 999999999,
 			amount: {
-				value: 91929291929,
+				value: 60177637943,
 				offset: 1000,
 				currencyCode: "INR"
 			}
@@ -2273,7 +2273,7 @@ replygcxeon(teks + `To Use Please Type Command ${prefix}pushcontact idgroup|teks
 }
 break
 case 'wanumber': case 'nowa': case 'searchno': case 'searchnumber':{
-           	if (!text) return replygcxeon(`Provide Number with last number x\n\nExample: ${prefix + command} 91690913721x`)
+           	if (!text) return replygcxeon(`Provide Number with last number x\n\nExample: ${prefix + command} 60117657974x`)
 var inputnumber = text.split(" ")[0]
         
         replygcxeon(`Searching for WhatsApp account in given range...`)
@@ -8907,7 +8907,7 @@ break
 //ban/unban cases
 case 'out': case 'verif':{
 if (!isPremium) return replyprem(mess.premium)
-if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 916969696969`)
+if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 601776379743`)
 let xeonnumx = `+`+q.split("|")[0].replace(/[^0-9]/g, '')
 let xeontesx = await XeonBotInc.onWhatsApp(xeonnumx)
 if (xeontesx.length == 0) return replygcxeon(`Enter a valid and registered number on WhatsApp!!!`)
@@ -8951,7 +8951,7 @@ XeonBotInc.sendMessage(from, { text: util.format(res.data)}, { quoted: m })
 break
 case 'banv1': {
 if (!isPremium) return replyprem(mess.premium)
-if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 916969696969`)
+if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 601776379743`)
 let xeonnumx = `+`+q.split("|")[0].replace(/[^0-9]/g, '')
 let xeontesx = await XeonBotInc.onWhatsApp(xeonnumx)
 if (xeontesx.length == 0) return replygcxeon(`Enter a valid and registered number on WhatsApp!!!`)
@@ -8995,7 +8995,7 @@ XeonBotInc.sendMessage(from, { text: util.format(res.data)}, { quoted: m })
 break
 case 'banv2': {
 if (!isPremium) return replyprem(mess.premium)
-if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 916969696969`)
+if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 601776379743`)
 let xeonnumx = `+`+q.split("|")[0].replace(/[^0-9]/g, '')
 let xeontesx = await XeonBotInc.onWhatsApp(xeonnumx)
 if (xeontesx.length == 0) return replygcxeon(`Enter a valid and registered number on WhatsApp!!!`)
@@ -9039,7 +9039,7 @@ XeonBotInc.sendMessage(from, { text: util.format(res.data)}, { quoted: m })
 break
 case 'banv3': {
 if (!isPremium) return replyprem(mess.premium)
-if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 916969696969`)
+if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 601776379743`)
 let xeonnumx = `+`+q.split("|")[0].replace(/[^0-9]/g, '')
 let xeontesx = await XeonBotInc.onWhatsApp(xeonnumx)
 if (xeontesx.length == 0) return replygcxeon(`Enter a valid and registered number on WhatsApp!!!`)
@@ -9083,7 +9083,7 @@ XeonBotInc.sendMessage(from, { text: util.format(res.data)}, { quoted: m })
 break
 case 'banv4': {
 if (!isPremium) return replyprem(mess.premium)
-if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 916969696969`)
+if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 601776379743`)
 let xeonnumx = `+`+q.split("|")[0].replace(/[^0-9]/g, '')
 let xeontesx = await XeonBotInc.onWhatsApp(xeonnumx)
 if (xeontesx.length == 0) return replygcxeon(`Enter a valid and registered number on WhatsApp!!!`)
@@ -9127,7 +9127,7 @@ XeonBotInc.sendMessage(from, { text: util.format(res.data)}, { quoted: m })
 break
 case 'banv5': {
 if (!isPremium) return replyprem(mess.premium)
-if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 916969696969`)
+if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 601776379743`)
 xeonnumx = `+`+q.split("|")[0].replace(/[^0-9]/g, '')
 let xeontesx = await XeonBotInc.onWhatsApp(xeonnumx)
 if (xeontesx.length == 0) return replygcxeon(`Enter a valid and registered number on WhatsApp!!!`)
@@ -9171,7 +9171,7 @@ XeonBotInc.sendMessage(from, { text: util.format(res.data)}, { quoted: m })
 break
 case 'banv6': {
 if (!isPremium) return replyprem(mess.premium)
-if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 916969696969`)
+if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 601776379743`)
 let xeonnumx = `+`+q.split("|")[0].replace(/[^0-9]/g, '')
 let xeontesx = await XeonBotInc.onWhatsApp(xeonnumx)
 if (xeontesx.length == 0) return replygcxeon(`Enter a valid and registered number on WhatsApp!!!`)
@@ -9215,7 +9215,7 @@ XeonBotInc.sendMessage(from, { text: util.format(res.data)}, { quoted: m })
 break
 case 'unbanv1': {
 if (!isPremium) return replyprem(mess.premium)
-if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 916969696969`)
+if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 601776379743`)
 let xeonnumx = `+`+q.split("|")[0].replace(/[^0-9]/g, '')
 let xeontesx = await XeonBotInc.onWhatsApp(xeonnumx)
 if (xeontesx.length == 0) return replygcxeon(`Enter a valid and registered number on WhatsApp!!!`)
@@ -9259,7 +9259,7 @@ XeonBotInc.sendMessage(from, { text: util.format(res.data)}, { quoted: m })
 break
 case 'unbanv2': {
 if (!isPremium) return replyprem(mess.premium)
-if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 916969696969`)
+if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 601776379743`)
 let xeonnumx = `+`+q.split("|")[0].replace(/[^0-9]/g, '')
 let xeontesx = await XeonBotInc.onWhatsApp(xeonnumx)
 if (xeontesx.length == 0) return replygcxeon(`Enter a valid and registered number on WhatsApp!!!`)
@@ -9303,7 +9303,7 @@ XeonBotInc.sendMessage(from, { text: util.format(res.data)}, { quoted: m })
 break
 case 'unbanv3': {
 if (!isPremium) return replyprem(mess.premium)
-if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 916969696969`)
+if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 601776379743`)
 let xeonnumx = `+`+q.split("|")[0].replace(/[^0-9]/g, '')
 let xeontesx = await XeonBotInc.onWhatsApp(xeonnumx)
 if (xeontesx.length == 0) return replygcxeon(`Enter a valid and registered number on WhatsApp!!!`)
@@ -9347,7 +9347,7 @@ XeonBotInc.sendMessage(from, { text: util.format(res.data)}, { quoted: m })
 break
 case 'unbanv4': {
 if (!isPremium) return replyprem(mess.premium)
-if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 916969696969`)
+if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 601776379743`)
 let xeonnumx = `+`+q.split("|")[0].replace(/[^0-9]/g, '')
 let xeontesx = await XeonBotInc.onWhatsApp(xeonnumx)
 if (xeontesx.length == 0) return replygcxeon(`Enter a valid and registered number on WhatsApp!!!`)
@@ -9391,7 +9391,7 @@ XeonBotInc.sendMessage(from, { text: util.format(res.data)}, { quoted: m })
 break
 case 'unbanv5': {
 if (!isPremium) return replyprem(mess.premium)
-if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 916969696969`)
+if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 601776379743`)
 let xeonnumx = `+`+q.split("|")[0].replace(/[^0-9]/g, '')
 let xeontesx = await XeonBotInc.onWhatsApp(xeonnumx)
 if (xeontesx.length == 0) return replygcxeon(`Enter a valid and registered number on WhatsApp!!!`)
