@@ -879,22 +879,23 @@ XeonBotInc.sendMessage(`${ownernumber}@s.whatsapp.net`,{text: `Hi Owner! wa.me/$
   }
         //respond
         if (db.data.chats[m.chat].badword) {
-            for (let bak of bad) {
-               if (budy === bak) {
-                  let baduser = await db.data.users[sender].badword
-                  XeonBotInc.sendMessage(m.chat,
-			    {
-			        delete: {
-			            remoteJid: m.chat,
-			            fromMe: false,
-			            id: m.key.id,
-			            participant: m.key.participant
-			        }
-			    })
-			XeonBotInc.sendMessage(from, {text:`\`\`\`「 Bad Word Detected 」\`\`\`\n\n@${m.sender.split("@")[0]} was using harsh words and his chat has been deleted`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
-               }
-            }
-        }
+	      for (let bak of bad) {
+	        if (budy.includes(bak)) {
+	          const groupAdmins = participants.filter((p) => p.admin);
+	          const listAdmin = groupAdmins
+	            .map((v, i) => `${i + 1}. @${v.id.split("@")[0]}`)
+	            .join("\n");
+	
+	          XeonBotInc.sendMessage(
+	            from, {
+	            text: `\`\`\`「 NAO WARNING 」\`\`\`\n\n@${m.sender.split("@")[0]} *_NAO SHION WARNING! CALLING OUT ALL ADMINS TO CHECK!_*\n\n*Group Admins:*\n${listAdmin}`,
+	            mentions: [...groupAdmins.map((v) => v.id)]
+	          }, { quoted: m }
+	          );
+	          break; // Stop iterating through bad words once one is found
+	        }
+	      }
+	    }
         //autosticker
         if (db.data.settings[botNumber].autosticker) {
         	if (m.key.fromMe) return
