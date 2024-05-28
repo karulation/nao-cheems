@@ -14,19 +14,19 @@ const chalk = require('chalk')
 global.sessionid ='ur session id'
 
 //owmner v card
-global.ytname = "YT: Karulation" //ur yt chanel name
-global.socialm = "GitHub: DGXeon" //ur github or insta name
-global.location = "India, Mizoram, Aizawl" //ur location
+global.ytname = "YouTube: Karulation" //ur yt chanel name
+global.socialm = "Instagram/TikTok : Karulation" //ur github or insta name
+global.location = "Kuala Lumpur, Malaysia" //ur location
 
 //new
-global.botname = 'Cheems Bot MD V11' //ur bot name
+global.botname = 'Nao Shion' //ur bot name
 global.ownernumber = '60177637943' //ur owner number
 global.ownername = 'Karu Shion' //ur owner name
 global.websitex = "https://youtu.be/mu5m6aB6P5k"
-global.wagc = "neoanicom.com?joinUs.php"
+global.wagc = "https://chat.whatsapp.com/I66bF7yF6Yr0D2Q34EMm3f"
 global.themeemoji = '🪀'
 global.wm = "Karulation"
-global.botscript = '-' //script link
+global.botscript = 'https://chat.whatsapp.com/I66bF7yF6Yr0D2Q34EMm3f' //script link
 global.packname = "Sticker By"
 global.author = "Karu Shion\n\n+60177637943"
 global.creator = "60177637943@s.whatsapp.net"
