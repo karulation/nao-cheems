@@ -218,8 +218,8 @@ XeonLft = await getBuffer(ppuser)
                 if (anu.action == 'add') {
                 const xeonbuffer = await getBuffer(ppuser)
                 let xeonName = num
-                const xtime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
-	            const xdate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
+                const xtime = moment.tz('Asia/Kuala_Lumpur').format('HH:mm:ss')
+	            const xdate = moment.tz('Asia/Kuala_Lumpur').format('DD/MM/YYYY')
 	            const xmembers = metadata.participants.length
                 xeonbody = `┌─❖
 │「 𝗛𝗶 👋 」
@@ -245,8 +245,8 @@ XeonBotInc.sendMessage(anu.id,
 "sourceUrl": `${wagc}`}}})
                 } else if (anu.action == 'remove') {
                 	const xeonbuffer = await getBuffer(ppuser)
-                    const xeontime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
-	                const xeondate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
+                    const xeontime = moment.tz('Asia/Kuala_Lumpur').format('HH:mm:ss')
+	                const xeondate = moment.tz('Asia/Kuala_Lumpur').format('DD/MM/YYYY')
                 	let xeonName = num
                     const xeonmembers = metadata.participants.length
                     xeonbody = `┌─❖
@@ -320,8 +320,8 @@ ppgroup = await XeonBotInc.profilePictureUrl(anu.id, 'image')
 ppgroup = 'https://i.ibb.co/RBx5SQC/avatar-group-large-v2.png?q=60'
 }
  if (anu.action == 'promote') {
-const xeontime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
-const xeondate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
+const xeontime = moment.tz('Asia/Kuala_Lumpur').format('HH:mm:ss')
+const xeondate = moment.tz('Asia/Kuala_Lumpur').format('DD/MM/YYYY')
 let xeonName = num
 xeonbody = ` 𝗖𝗼𝗻𝗴𝗿𝗮𝘁𝘀🎉 @${xeonName.split("@")[0]}, you have been *promoted* to *admin* 🥳`
    XeonBotInc.sendMessage(anu.id,
@@ -337,8 +337,8 @@ xeonbody = ` 𝗖𝗼𝗻𝗴𝗿𝗮𝘁𝘀🎉 @${xeonName.split("@")[0]}, yo
 "thumbnail": XeonWlcm,
 "sourceUrl": `${wagc}`}}})
 } else if (anu.action == 'demote') {
-const xeontime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
-const xeondate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
+const xeontime = moment.tz('Asia/Kuala_Lumpur').format('HH:mm:ss')
+const xeondate = moment.tz('Asia/Kuala_Lumpur').format('DD/MM/YYYY')
 let xeonName = num
 xeonbody = `𝗢𝗼𝗽𝘀‼️ @${xeonName.split("@")[0]}, you have been *demoted* from *admin* 😬`
 XeonBotInc.sendMessage(anu.id,
